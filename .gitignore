@@ -274,3 +274,8 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# Manually added
+.DS_store
+.vscode
+main.pdf

@@ -1,0 +1,84 @@
+\documentclass[11pt,a4paper]{article}
+
+% Margin
+\usepackage[margin=1truein]{geometry}
+
+% Fonts
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+% Math
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{example}[theorem]{Example}
+
+\usepackage{braket}
+\usepackage{mathtools}
+\usepackage{nicematrix}
+\usepackage{physics}
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+% Bibliography
+\usepackage{etoolbox}
+\cslet{blx@noerroretextools}\empty%
+\usepackage[date=year,isbn=false,maxcitenames=2,natbib,url=false,sorting=nyt,style=trad-abbrv]{biblatex}
+\addbibresource{references.bib}
+
+% Tables
+\usepackage{booktabs}
+
+% Hyperlinks
+\usepackage[bookmarksnumbered,hypertexnames=false,pdfdisplaydoctitle,pdfusetitle,unicode]{hyperref}
+\usepackage{url}
+
+% References
+\usepackage{upref}
+\usepackage[capitalize,noabbrev]{cleveref}
+\newcommand{\crefrangeconjunction}{--}
+
+\expandafter\def\csname ver@etex.sty\endcsname{3000/12/31}
+\let\globcount\newcount%
+\usepackage{autonum}
+
+% Misc
+\usepackage{comment}
+\usepackage{todonotes}
+\setlength{\marginparwidth}{2cm}
+
+\title{\texorpdfstring{%
+  Plain \LaTeX\ Template for English Documents
+}{%
+  Plain LaTeX Template for English Documents
+}}
+\author{Taihei Oki%
+  \texorpdfstring{\thanks{
+    Department of Mathematical Informatics, Graduate School of Information Science and Technology, University of Tokyo, Tokyo 113-8656, Japan.
+    E-mail: \href{mailto:oki@mist.i.u-tokyo.ac.jp}{\nolinkurl{oki@mist.i.u-tokyo.ac.jp}}
+  }}{}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+
+Write abstract here.
+
+\end{abstract}
+
+\section{Introduction}
+Cite as \citep{Adams1995}.
+
+\printbibliography[heading=bibintoc]
+
+\end{document}
